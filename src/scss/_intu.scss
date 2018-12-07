@@ -1,0 +1,71 @@
+$primary-color: lightgray;
+$secondary-color: #94cdd3;
+$border-radius: 5px;
+
+.container {
+
+  margin: 30px auto;
+  width: max-content;
+  border: 1px solid $primary-color;
+  border-radius: $border-radius;
+  padding: 10px;
+
+  .stop-watch {
+    text-align: center;
+
+    .stop-watch-value {
+      display: inline-block;
+      font-size: 40px;
+      color: cadetblue;
+      margin: 48px;
+    }
+
+  }
+
+  .row {
+
+    border: 1px solid $primary-color;
+    border-radius: $border-radius;
+    padding: 10px;
+    margin-bottom: 10px;
+
+    button {
+      width: 100px;
+      height: 35px;
+      border-radius: $border-radius;
+      border: 1px solid $secondary-color;
+      margin: 5px;
+
+      &:hover {
+        cursor: pointer;
+        background-color: darkgrey;
+      }
+
+      &:disabled {
+        cursor: inherit;
+        background-color: inherit;
+      }
+
+    }
+
+  }
+
+  .block {
+
+    table {
+
+      width: 100%;
+      border-collapse: collapse; /*убираем пустые промежутки между ячейками*/
+      border: 1px solid $primary-color;
+      border-radius: $border-radius;
+
+      th, td {
+        border: 1px solid $primary-color;
+        text-align: center;
+        padding: 7px;
+      }
+    }
+
+  }
+
+}

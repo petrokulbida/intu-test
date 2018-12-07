@@ -1,0 +1,56 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container {
+  margin: 30px auto;
+  width: max-content;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding: 10px;
+}
+.container .stop-watch {
+  text-align: center;
+}
+.container .stop-watch .stop-watch-value {
+  display: inline-block;
+  font-size: 40px;
+  color: cadetblue;
+  margin: 48px;
+}
+.container .row {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.container .row button {
+  width: 100px;
+  height: 35px;
+  border-radius: 5px;
+  border: 1px solid #94cdd3;
+  margin: 5px;
+}
+.container .row button:hover {
+  cursor: pointer;
+  background-color: darkgrey;
+}
+.container .row button:disabled {
+  cursor: inherit;
+  background-color: inherit;
+}
+.container .block table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+.container .block table th, .container .block table td {
+  border: 1px solid lightgray;
+  text-align: center;
+  padding: 7px;
+}
